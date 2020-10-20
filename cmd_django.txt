@@ -1,0 +1,947 @@
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku run bash
+Running bash on ⬢ portfolio8282... done
+Error: getaddrinfo ENOTFOUND rendezvous.runtime.heroku.com
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku run bash
+Running bash on ⬢ portfolio8282... up, run.5870 (Free)
+~ $ ls
+blog  db.sqlite3  manage.py  portfolio8282  Procfile  requirements.txt  runtime.txt  staticfiles
+~ $ heroku manage.py migrate
+bash: heroku: command not found
+~ $ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, blog, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying blog.0001_initial... OK
+  Applying sessions.0001_initial... OK
+~ $ python manage.py createsuperuser
+Username (leave blank to use 'u26667'): admin
+Email address: chhusnain74773@gmail.com
+Password:
+Password (again):
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+~ $ exit
+exit
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .idea/vcs.xml
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   blog/models.py
+        modified:   blog/views.py
+        modified:   portfolio8282/urls.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/inspectionProfiles/
+        blog/templates/
+        blog/urls.py
+        helpbyhusnain.txt
+        portfolio8282/views.py
+        templates/
+
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -A
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .idea/inspectionProfiles/Project_Default.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git commit -m "rollapaygia"
+[master e7ed5c4] rollapaygia
+ 11 files changed, 326 insertions(+), 29 deletions(-)
+ create mode 100644 .idea/inspectionProfiles/Project_Default.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 blog/templates/blog/index.html
+ create mode 100644 blog/urls.py
+ create mode 100644 helpbyhusnain.txt
+ create mode 100644 portfolio8282/views.py
+ create mode 100644 templates/index.html
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heeroku master
+fatal: 'heeroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heroku master
+Enumerating objects: 28, done.
+Counting objects: 100% (28/28), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (20/20), 5.44 KiB | 796.00 KiB/s, done.
+Total 20 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> No change in requirements detected, installing from cache
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        119 static files copied to '/tmp/build_7e493a9f/staticfiles', 364 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 52.8M
+remote: -----> Launching...
+remote:        Released v6
+remote:        https://portfolio8282.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/portfolio8282.git
+   e41f257..e7ed5c4  master -> master
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .idea/workspace.xml
+        new file:   blog/__init__.py
+        new file:   blog/admin.py
+        new file:   blog/apps.py
+        new file:   blog/migrations/0001_initial.py
+        new file:   blog/migrations/0002_blog_image.py
+        new file:   blog/migrations/__init__.py
+        new file:   blog/models.py
+        new file:   blog/templates/blog/index.html
+        new file:   blog/tests.py
+        new file:   blog/urls.py
+        new file:   blog/views.py
+        new file:   db.sqlite3
+        new file:   helpbyhusnain.txt
+        new file:   portfolio8282/settings.py
+        new file:   portfolio8282/urls.py
+        new file:   templates/index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   blog/views.py
+        modified:   db.sqlite3
+        modified:   portfolio8282/settings.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../.Icecream PDF Converter/
+        ../../.IntelliJIdea2017.3/
+        ../../.PyCharm2017.2/
+        ../../.bash_history
+        ../../.conda/
+        ../../.condarc
+        ../../.gitconfig
+        ../../.ipython/
+        ../../.m2/
+        ../../.matplotlib/
+        ../../.pylint.d/
+        ../../.scrapinghub.yml
+        ../../.spyder-py3/
+        ../../.ssh/
+        ../../.vscode/
+        ../../AppData/
+        ../../Bootstrap Studio projects/
+        ../../Contacts/
+        ../../Desktop/
+        ../../Documents/
+        ../../Downloads/
+        ../../Favorites/
+        ../../IntelGraphicsProfiles/
+        ../../IntellijProjects/
+        ../../Links/
+        ../../Music/
+        ../../NTUSER.DAT
+        ../../NTUSER.DAT{65c4d548-7126-11e4-80c4-b8ca3aee13b7}.TM.blf
+        ../../NTUSER.DAT{65c4d548-7126-11e4-80c4-b8ca3aee13b7}.TMContainer00000000000000000001.regtrans-ms
+        ../../NTUSER.DAT{65c4d548-7126-11e4-80c4-b8ca3aee13b7}.TMContainer00000000000000000002.regtrans-ms
+        ../../Pictures/
+        ../AutoRCCar/
+        ../code_project/
+        Procfile
+        blog/__pycache__/
+        images/
+        manage.py
+        portfolio8282/__init__.py
+        portfolio8282/__pycache__/
+        portfolio8282/asgi.py
+        portfolio8282/views.py
+        portfolio8282/wsgi.py
+        requirements.txt
+        ../scrapy_websites/
+        ../web_portfolio/
+        ../web_practice/
+        ../web_project_main/
+        ../../Saved Games/
+        ../../Searches/
+        ../../Videos/
+        ../../_netrc
+        ../../anaconda3/
+        ../../ntuser.dat.LOG1
+        ../../ntuser.dat.LOG2
+        ../../ntuser.ini
+
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -A
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .idea/workspace.xml
+        new file:   blog/__init__.py
+        new file:   blog/admin.py
+        new file:   blog/apps.py
+        new file:   blog/migrations/0001_initial.py
+        new file:   blog/migrations/0002_blog_image.py
+        new file:   blog/migrations/__init__.py
+        new file:   blog/models.py
+        new file:   blog/templates/blog/index.html
+        new file:   blog/tests.py
+        new file:   blog/urls.py
+        new file:   blog/views.py
+        new file:   db.sqlite3
+        new file:   helpbyhusnain.txt
+        new file:   portfolio8282/settings.py
+        new file:   portfolio8282/urls.py
+        new file:   templates/index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   blog/views.py
+        modified:   db.sqlite3
+        modified:   portfolio8282/settings.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../../.Icecream PDF Converter/
+        ../../.IntelliJIdea2017.3/
+        ../../.PyCharm2017.2/
+        ../../.bash_history
+        ../../.conda/
+        ../../.condarc
+        ../../.gitconfig
+        ../../.ipython/
+        ../../.m2/
+        ../../.matplotlib/
+        ../../.pylint.d/
+        ../../.scrapinghub.yml
+        ../../.spyder-py3/
+        ../../.ssh/
+        ../../.vscode/
+        ../../AppData/
+        ../../Bootstrap Studio projects/
+        ../../Contacts/
+        ../../Desktop/
+        ../../Documents/
+        ../../Downloads/
+        ../../Favorites/
+        ../../IntelGraphicsProfiles/
+        ../../IntellijProjects/
+        ../../Links/
+        ../../Music/
+        ../../NTUSER.DAT
+        ../../NTUSER.DAT{65c4d548-7126-11e4-80c4-b8ca3aee13b7}.TM.blf
+        ../../NTUSER.DAT{65c4d548-7126-11e4-80c4-b8ca3aee13b7}.TMContainer00000000000000000001.regtrans-ms
+        ../../NTUSER.DAT{65c4d548-7126-11e4-80c4-b8ca3aee13b7}.TMContainer00000000000000000002.regtrans-ms
+        ../../Pictures/
+        ../AutoRCCar/
+        ../code_project/
+        Procfile
+        blog/__pycache__/
+        images/
+        manage.py
+        portfolio8282/__init__.py
+        portfolio8282/__pycache__/
+        portfolio8282/asgi.py
+        portfolio8282/views.py
+        portfolio8282/wsgi.py
+        requirements.txt
+        ../scrapy_websites/
+        ../web_portfolio/
+        ../web_practice/
+        ../web_project_main/
+        ../../Saved Games/
+        ../../Searches/
+        ../../Videos/
+        ../../_netrc
+        ../../anaconda3/
+        ../../ntuser.dat.LOG1
+        ../../ntuser.dat.LOG2
+        ../../ntuser.ini
+
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git init
+Initialized empty Git repository in C:/Users/HUSNAIN CHOUDHARY/PycharmProjects/portfolio8282/.git/
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -A
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git commit -m "add files"
+[master (root-commit) 27b1eb5] add files
+ 38 files changed, 813 insertions(+)
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 Procfile
+ create mode 100644 blog/__init__.py
+ create mode 100644 blog/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 blog/__pycache__/admin.cpython-37.pyc
+ create mode 100644 blog/__pycache__/apps.cpython-37.pyc
+ create mode 100644 blog/__pycache__/models.cpython-37.pyc
+ create mode 100644 blog/__pycache__/urls.cpython-37.pyc
+ create mode 100644 blog/__pycache__/views.cpython-37.pyc
+ create mode 100644 blog/admin.py
+ create mode 100644 blog/apps.py
+ create mode 100644 blog/migrations/0001_initial.py
+ create mode 100644 blog/migrations/0002_blog_image.py
+ create mode 100644 blog/migrations/__init__.py
+ create mode 100644 blog/models.py
+ create mode 100644 blog/templates/blog/index.html
+ create mode 100644 blog/tests.py
+ create mode 100644 blog/urls.py
+ create mode 100644 blog/views.py
+ create mode 100644 db.sqlite3
+ create mode 100644 helpbyhusnain.txt
+ create mode 100644 images/entrepreneur-593358_1280.jpg
+ create mode 100644 images/graduation-995042_1920.jpg
+ create mode 100644 images/person-984236_1280.jpg
+ create mode 100644 manage.py
+ create mode 100644 portfolio8282/__init__.py
+ create mode 100644 portfolio8282/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 portfolio8282/__pycache__/settings.cpython-37.pyc
+ create mode 100644 portfolio8282/__pycache__/urls.cpython-37.pyc
+ create mode 100644 portfolio8282/__pycache__/views.cpython-37.pyc
+ create mode 100644 portfolio8282/__pycache__/wsgi.cpython-37.pyc
+ create mode 100644 portfolio8282/asgi.py
+ create mode 100644 portfolio8282/settings.py
+ create mode 100644 portfolio8282/urls.py
+ create mode 100644 portfolio8282/views.py
+ create mode 100644 portfolio8282/wsgi.py
+ create mode 100644 requirements.txt
+ create mode 100644 templates/index.html
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku git:remote -a portfolio8282
+set git remote heroku to https://git.heroku.com/portfolio8282.git
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heroku master
+To https://git.heroku.com/portfolio8282.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://git.heroku.com/portfolio8282.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push -f heroku master
+Enumerating objects: 48, done.
+Counting objects: 100% (48/48), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (42/42), done.
+Writing objects: 100% (48/48), 849.01 KiB | 9.76 MiB/s, done.
+Total 48 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> No change in requirements detected, installing from cache
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        119 static files copied to '/tmp/build_fd63ee7f/staticfiles', 377 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 53.4M
+remote: -----> Launching...
+remote:        Released v7
+remote:        https://portfolio8282.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/portfolio8282.git
+ + e7ed5c4...27b1eb5 master -> master (forced update)
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku apps:destroy portfolio8282
+ !    WARNING: This will delete ⬢ portfolio8282 including all add-ons.
+ !    To proceed, type portfolio8282 or re-run this command with --confirm
+ !    portfolio8282
+
+> portfolio8282
+Destroying ⬢ portfolio8282 (including all add-ons)... done
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heeroku create portfolio8282
+'heeroku' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku create portfolio8282
+Creating ⬢ portfolio8282... done
+https://portfolio8282.herokuapp.com/ | https://git.heroku.com/portfolio8282.git
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git init
+Reinitialized existing Git repository in C:/Users/HUSNAIN CHOUDHARY/PycharmProjects/portfolio8282/.git/
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -A
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git commit -m "add:
+[master b535856] add:
+ 1 file changed, 11 insertions(+), 13 deletions(-)
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git commit -m "add"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku git:remote -a portfolio8282
+set git remote heroku to https://git.heroku.com/portfolio8282.git
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heroku master
+Enumerating objects: 52, done.
+Counting objects: 100% (52/52), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (45/45), done.
+Writing objects: 100% (52/52), 849.33 KiB | 3.57 MiB/s, done.
+Total 52 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.12
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting dj-database-url==0.5.0
+remote:          Downloading dj_database_url-0.5.0-py2.py3-none-any.whl (5.5 kB)
+remote:        Collecting Django==2.2
+remote:          Downloading Django-2.2-py3-none-any.whl (7.4 MB)
+remote:        Collecting django-heroku==0.3.1
+remote:          Downloading django_heroku-0.3.1-py2.py3-none-any.whl (6.2 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting psycopg2==2.8.6
+remote:          Downloading psycopg2-2.8.6.tar.gz (383 kB)
+remote:        Collecting pytz==2020.1
+remote:          Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+remote:        Collecting sqlparse==0.4.1
+remote:          Downloading sqlparse-0.4.1-py3-none-any.whl (42 kB)
+remote:        Collecting whitenoise==5.2.0
+remote:          Downloading whitenoise-5.2.0-py2.py3-none-any.whl (19 kB)
+remote:        Building wheels for collected packages: psycopg2
+remote:          Building wheel for psycopg2 (setup.py): started
+remote:          Building wheel for psycopg2 (setup.py): finished with status 'done'
+remote:          Created wheel for psycopg2: filename=psycopg2-2.8.6-cp36-cp36m-linux_x86_64.whl size=447590 sha256=63e6fbe26e4e5307ff077b3155c9f8f6306c654bd5a28bba37cd526ef7a155e1
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-rzx2php_/wheels/cb/74/1b/4b65077db4eb0d85763050e60c5921398d2858945558352dd8
+remote:        Successfully built psycopg2
+remote:        Installing collected packages: dj-database-url, pytz, sqlparse, Django, whitenoise, psycopg2, django-heroku, gunicorn
+remote:        Successfully installed Django-2.2 dj-database-url-0.5.0 django-heroku-0.3.1 gunicorn-20.0.4 psycopg2-2.8.6 pytz-2020.1 sqlparse-0.4.1 whitenoise-5.2.0
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        119 static files copied to '/tmp/build_d29fc77f/staticfiles', 377 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 53.6M
+remote: -----> Launching...
+remote:        Released v5
+remote:        https://portfolio8282.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/portfolio8282.git
+ * [new branch]      master -> master
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku run bash
+Running bash on ⬢ portfolio8282... up, run.3419 (Free)
+~ $ ls
+blog        helpbyhusnain.txt  manage.py      Procfile          runtime.txt  templates
+db.sqlite3  images             portfolio8282  requirements.txt  staticfiles
+~ $ python manage.py migrate
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    main()
+  File "manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/base.py", line 361, in execute
+    self.check()
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/commands/migrate.py", line 65, in _run_checks
+
+    issues.extend(super()._run_checks(**kwargs))
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/urls/resolvers.py", line 571, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/urls/resolvers.py", line 564, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/app/.heroku/python/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/app/portfolio8282/urls.py", line 27, in <module>
+    ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+  File "/app/.heroku/python/lib/python3.6/site-packages/django/conf/urls/static.py", line 22, in static
+    raise ImproperlyConfigured("Empty static prefix not permitted")
+django.core.exceptions.ImproperlyConfigured: Empty static prefix not permitted
+~ $ exit
+exit
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   db.sqlite3
+        modified:   portfolio8282/settings.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        media/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git init
+Reinitialized existing Git repository in C:/Users/HUSNAIN CHOUDHARY/PycharmProjects/portfolio8282/.git/
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -A
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git commit -m "add"
+[master 71017e7] add
+ 5 files changed, 28 insertions(+), 26 deletions(-)
+ create mode 100644 media/images/entrepreneur-593358_1280.jpg
+ create mode 100644 media/images/graduation-995042_1920.jpg
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heroku master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 614.98 KiB | 4.13 MiB/s, done.
+Total 11 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> No change in requirements detected, installing from cache
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        119 static files copied to '/tmp/build_1bf67580/staticfiles', 377 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 54.1M
+remote: -----> Launching...
+remote:        Released v6
+remote:        https://portfolio8282.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/portfolio8282.git
+   b535856..71017e7  master -> master
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku apps:destroy portfolio8282
+ !    WARNING: This will delete ⬢ portfolio8282 including all add-ons.
+ !    To proceed, type portfolio8282 or re-run this command with --confirm
+ !    portfolio8282
+
+> portfolio8282
+Destroying ⬢ portfolio8282 (including all add-ons)... done
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku create portfolio8282
+Creating ⬢ portfolio8282... done
+https://portfolio8282.herokuapp.com/ | https://git.heroku.com/portfolio8282.git
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   helpbyhusnain.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git init
+Reinitialized existing Git repository in C:/Users/HUSNAIN CHOUDHARY/PycharmProjects/portfolio8282/.git/
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -A
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git commit -m "add"
+[master 368a11f] add
+ 2 files changed, 29 insertions(+), 12 deletions(-)
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku git:remote -a portfolio8282
+set git remote heroku to https://git.heroku.com/portfolio8282.git
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heroku master
+Enumerating objects: 66, done.
+Counting objects: 100% (66/66), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (56/56), done.
+Writing objects: 100% (66/66), 850.90 KiB | 4.36 MiB/s, done.
+Total 66 (delta 13), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Installing python-3.6.12
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting dj-database-url==0.5.0
+remote:          Downloading dj_database_url-0.5.0-py2.py3-none-any.whl (5.5 kB)
+remote:        Collecting Django==2.2
+remote:          Downloading Django-2.2-py3-none-any.whl (7.4 MB)
+remote:        Collecting django-heroku==0.3.1
+remote:          Downloading django_heroku-0.3.1-py2.py3-none-any.whl (6.2 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting psycopg2==2.8.6
+remote:          Downloading psycopg2-2.8.6.tar.gz (383 kB)
+remote:        Collecting pytz==2020.1
+remote:          Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+remote:        Collecting sqlparse==0.4.1
+remote:          Downloading sqlparse-0.4.1-py3-none-any.whl (42 kB)
+remote:        Collecting whitenoise==5.2.0
+remote:          Downloading whitenoise-5.2.0-py2.py3-none-any.whl (19 kB)
+remote:        Building wheels for collected packages: psycopg2
+remote:          Building wheel for psycopg2 (setup.py): started
+remote:          Building wheel for psycopg2 (setup.py): finished with status 'done'
+remote:          Created wheel for psycopg2: filename=psycopg2-2.8.6-cp36-cp36m-linux_x86_64.whl size=447648 sha256=66765c4f29cd063902564bf404902e88e7172918d1ddf4ae183604241ad9592f
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-t9797wo4/wheels/cb/74/1b/4b65077db4eb0d85763050e60c5921398d2858945558352dd8
+remote:        Successfully built psycopg2
+remote:        Installing collected packages: dj-database-url, pytz, sqlparse, Django, whitenoise, psycopg2, django-heroku, gunicorn
+remote:        Successfully installed Django-2.2 dj-database-url-0.5.0 django-heroku-0.3.1 gunicorn-20.0.4 psycopg2-2.8.6 pytz-2020.1 sqlparse-0.4.1 whitenoise-5.2.0
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        119 static files copied to '/tmp/build_231632d1/staticfiles', 377 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 54.1M
+remote: -----> Launching...
+remote:        Released v5
+remote:        https://portfolio8282.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/portfolio8282.git
+ * [new branch]      master -> master
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku run bash
+Running bash on ⬢ portfolio8282... up, run.2432 (Free)
+~ $ ls
+blog        helpbyhusnain.txt  manage.py  portfolio8282  requirements.txt  staticfiles
+db.sqlite3  images             media      Procfile       runtime.txt       templates
+~ $ python manage.py migrate
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+blog.blog.image: (fields.E210) Cannot use ImageField because Pillow is not installed.
+        HINT: Get Pillow at https://pypi.org/project/Pillow/ or run command "pip install Pillow".
+~ $ exit
+exit
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    requirements.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        requirements.txt
+
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git init
+Reinitialized existing Git repository in C:/Users/HUSNAIN CHOUDHARY/PycharmProjects/portfolio8282/.git/
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git add -A
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git commit -m "add"
+[master 6935a8b] add
+ 2 files changed, 13 insertions(+), 12 deletions(-)
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ git push heroku master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 504 bytes | 126.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Python app detected
+remote: -----> Requirements file has been changed, clearing cached dependencies
+remote: -----> Installing python-3.6.12
+remote: -----> Installing pip 20.1.1, setuptools 47.1.1 and wheel 0.34.2
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote:        Collecting dj-database-url==0.5.0
+remote:          Downloading dj_database_url-0.5.0-py2.py3-none-any.whl (5.5 kB)
+remote:        Collecting Django==2.2
+remote:          Downloading Django-2.2-py3-none-any.whl (7.4 MB)
+remote:        Collecting django-heroku==0.3.1
+remote:          Downloading django_heroku-0.3.1-py2.py3-none-any.whl (6.2 kB)
+remote:        Collecting gunicorn==20.0.4
+remote:          Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+remote:        Collecting Pillow==8.0.0
+remote:          Downloading Pillow-8.0.0-cp36-cp36m-manylinux1_x86_64.whl (2.2 MB)
+remote:        Collecting psycopg2==2.8.6
+remote:          Downloading psycopg2-2.8.6.tar.gz (383 kB)
+remote:        Collecting pytz==2020.1
+remote:          Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+remote:        Collecting sqlparse==0.4.1
+remote:          Downloading sqlparse-0.4.1-py3-none-any.whl (42 kB)
+remote:        Collecting whitenoise==5.2.0
+remote:          Downloading whitenoise-5.2.0-py2.py3-none-any.whl (19 kB)
+remote:        Building wheels for collected packages: psycopg2
+remote:          Building wheel for psycopg2 (setup.py): started
+remote:          Building wheel for psycopg2 (setup.py): finished with status 'done'
+remote:          Created wheel for psycopg2: filename=psycopg2-2.8.6-cp36-cp36m-linux_x86_64.whl size=447595 sha256=d735a4533d5feed5bbc54dc901051312d87482ab84ee3962c8d827dae753974e
+remote:          Stored in directory: /tmp/pip-ephem-wheel-cache-q7k_wmb3/wheels/cb/74/1b/4b65077db4eb0d85763050e60c5921398d2858945558352dd8
+remote:        Successfully built psycopg2
+remote:        Installing collected packages: dj-database-url, sqlparse, pytz, Django, psycopg2, whitenoise, django-heroku, gunicorn, Pillow
+remote:        Successfully installed Django-2.2 Pillow-8.0.0 dj-database-url-0.5.0 django-heroku-0.3.1 gunicorn-20.0.4 psycopg2-2.8.6 pytz-2020.1 sqlparse-0.4.1 whitenoise-5.2.0
+remote: -----> $ python manage.py collectstatic --noinput
+remote:        119 static files copied to '/tmp/build_b0833165/staticfiles', 377 post-processed.
+remote:
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 56.5M
+remote: -----> Launching...
+remote:        Released v6
+remote:        https://portfolio8282.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/portfolio8282.git
+   368a11f..6935a8b  master -> master
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ heroku run bash
+Running bash on ⬢ portfolio8282... up, run.1305 (Free)
+~ $ ls
+blog        helpbyhusnain.txt  manage.py  portfolio8282  requirements.txt  staticfiles
+db.sqlite3  images             media      Procfile       runtime.txt       templates
+~ $ python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, blog, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying blog.0001_initial... OK
+  Applying blog.0002_blog_image... OK
+  Applying sessions.0001_initial... OK
+~ $ python manage.py createsuperuser
+Username (leave blank to use 'u23863'): admin
+Email address: chhusnain74773@gmail.com
+Password:
+Password (again):
+This password is too common.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+~ $ exit
+exit
+
+C:\Users\HUSNAIN CHOUDHARY\PycharmProjects\portfolio8282 (master)
+(venv) λ

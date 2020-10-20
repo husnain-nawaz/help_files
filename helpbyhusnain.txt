@@ -1,0 +1,149 @@
+use django 2.2
+pyhcharm version is 2.17 which no old for django 3.1.1 new version of django
+in django 3.1.1 sqllite date setting is change
+
+use this when use  > django 2.2
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),}
+}
+
+instead of the other default by 3.1.1 create by pycharm or command line
+which is
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        }
+}
+
+when create project in pycharm you close the previous project click in file than close project
+the new starting window of pycharm will be open than create new project in this why pycharm
+not install required libraries automatically you can install it manually through command line
+
+
+errors :
+
+optional error is because you forget to do two commands which ae
+1  makemigrations
+2  migrate
+
+error:
+ProgrammingError at /blog/
+relation "blog_blog" does not exist
+LINE 1: ...blog_blog"."summary", "blog_blog"."pub_date" FROM "blog_blog...
+
+
+it is because your database sqlite3 has same errors maybe jus assumm ---> your database is old for
+django 3.1.1 or vis virsa
+
+
+
+i think 3.1.1 framework of django is change in many ways it install more libraries than 2.2 version etc
+
+you can also use MYSQL database if errors not removed.
+
+
+
+
+for 2.2 version :
+
+if template error is
+TemplateDoesNotExist at /
+
+the templates portion of setting in 2.2 is empty for DIRS
+fill DIRS with os.path.join(BASE_DIR, 'templates')
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        ,
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+
+
+
+
+
+
+
+
+
+also add these if use django 2.2
+
+TEMPLATE_DIRS = (os.path.join(BASE_DIR,  'templates'),)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/media/'
+
+
+
+
+
+
+
+
+
+
+
+<<<<<<<<<<<<.............heroku.........>>>>>>>>>>
+
+search google :    heroku configure django app 
+
+
+
+delete app :                                        heroku apps:destroy webfile/domain
+create :                                            heroku create domain
+status :                                            git status
+initialize:                                         git init
+add all files:                                      git add -A
+commit in local machine:                            git commit -m "add"                               
+add in server :                                     heroku git:remote -a domain
+push in server :                                    git push heroku master
+push forcefully if simple push not work :           git push -f heroku master
+
+>>>>>>>>>>>>>>>>access admin panel after website online in google:
+
+
+heroku run bash
+ls
+python manage.py migrate
+python manage.py createsuperuser >>>>>> admin, example@gmail.com ,password
+exit
+
+
+
+
+
+
+<<<<<<<<<<<<<<<<<<<<<<.....GIT.....>>>>>>>>>>>>>>>>>>>>
+
+
+status :                                            git status
+initialize:                                         git init
+add all files:                                      git add -A
+commit in local machine:                            git commit -m "add": 
+add in git :                                        git remote add origin https//:link
+push in git :                                       git push origin master
+push forcefully if simple push not work :           git push -f origin master
+
+
+
+
+
+
