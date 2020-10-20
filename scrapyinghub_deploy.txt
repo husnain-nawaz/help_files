@@ -1,0 +1,4 @@
+$ pip install shub
+$ shub login
+API key: 08f3ed9e332141c4854fbf4796271fe8
+$ shub deploy 477182

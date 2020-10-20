@@ -1,0 +1,6 @@
+git init
+git status (optional)
+git add -A (add all fies)
+git commit -m "project ----> web scrapy (desktop)"
+git remote add origin https://github.com/husnain-nawaz/web_project_main.git
+git push origin master
