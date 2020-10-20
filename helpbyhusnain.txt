@@ -30,15 +30,27 @@ errors :
 optional error is because you forget to do two commands which ae
 1  makemigrations
 2  migrate
+------
+error main:
 
-error:
+
 ProgrammingError at /blog/
 relation "blog_blog" does not exist
 LINE 1: ...blog_blog"."summary", "blog_blog"."pub_date" FROM "blog_blog...
 
 
-it is because your database sqlite3 has same errors maybe jus assumm ---> your database is old for
-django 3.1.1 or vis virsa
+it is because your database sqlite3 is not migrate in server   you must use these command after putting
+your project on heroku are
+1.   heroku run bash
+2.   ls
+3.   python manage.py migrate
+4.   python manage.py createsuperuser >>>>>> admin, example@gmail.com ,password
+5.   exit
+--------------------------------
+
+
+
+
 
 
 
