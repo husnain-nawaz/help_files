@@ -1,6 +1,7 @@
 git init
 git status (optional)
 git add -A (add all fies)
+git add README.md (if you include this file durring create repository on web add Readme.md file to) > optional
 git commit -m "project ----> web scrapy (desktop)"
 git remote add origin https://github.com/husnain-nawaz/web_project_main.git
 git push origin master
