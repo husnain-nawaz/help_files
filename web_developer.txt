@@ -1,0 +1,33 @@
+						<<<<<<<<<<<<<<    Full stack web developer fundamentals     >>>>>>>>>>>>>
+
+
+								<<<<<<<   Time duration : 1 year 3 months (Daily : 4 hours)   >>>>>>>
+
+HTML            ---------->       20 Days
+CSS             ---------->       45 Days
+BOOTSTRAP       ---------->       20 Days
+JAVASCRIPT      ---------->       75 Days
+PYTHON          ---------->       75 Days
+DJANGO          ---------->       90 Days
+MYSQL           ---------->       75 Days
+DOCKER          ---------->       75 Days
+
+`````````````````````````````****************`````````````````````````````````
+
+
+HTML: 90%
+	10 Projects (website)
+CSS: 75%
+	10 Projects (website)
+BOOTSTRAP: 85%
+	10 Projects (website)
+JAVASCRIPT: 65%
+	10 Projects (website)
+PYTHON: 65%
+	10 Projects (games)
+DJANGO: 75%
+	10 Projects (website)
+MYSQL: 70%
+	10 Projects (website)
+DOCKER: 70%
+	10 Projects (website)

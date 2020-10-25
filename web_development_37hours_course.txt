@@ -1,0 +1,124 @@
+					<<<<<<<<     Udemy :  Full Stack Web Developer with AI & ML Integration|Hindi|Urdu Ahmad MOhsin     >>>>>>>>
+
+1. https://www.submarinecablemap.com/
+To show wires under ocean of internet
+
+2. https://cssminifier.com/
+Clear spaces in css file or minimize the file of css to perform website better
+
+3. https://www.w3schools.com/
+To learn programming languages
+
+4. https://css-tricks.com/
+All about css documentation and all css tags how to use ? etc
+
+5. https://paletton.com/
+Color schemes / encyclopedia of colors
+
+6. https://specificity.keegan.st/
+Which css selector is more specific / preferable than other one 
+
+7. https://fonts.google.com/
+Google fonts
+
+8. https://flexboxfroggy.com/
+Flexbox css 
+
+9. https://caniuse.com/
+In which internet softwares like chrome/mozilla other versions i can use this selector of Css / is there support available 
+
+10. https://getbootstrap.com/
+Css + Html + Javascript framework which help to make responsive websites
+
+11. https://mailchimp.com/
+Email marketing service > 48 vedio nunmber course udemy to explain
+
+12. https://github.com/
+Add projects/codes/files on internet to access any time
+
+13. https://www.scrapinghub.com/
+Add projects/codes/files related to scrapy python framework on internet to access any time and run on internet server
+
+14. https://sarthology.github.io/Animatopy/
+Css animation for adding into files
+
+15. https://animate.style/
+Css animation for adding into files But less prefereable than sarthology
+
+16. https://www.creative-tim.com/
+* Free & paid templates / websites to download
+
+17. http://www.mashup-template.com/
+Free Templates
+
+18. https://grid.malven.co/
+Flex-box and Grid all combinations
+
+19. https://interfacer.xyz/
+Free design resources of websites
+
+20. https://undraw.co/illustrations
+Free illustration images
+
+21. https://www.kissclipart.com/
+Free cartoon illustration images or icon images
+
+22. https://unsplash.com/
+Free images
+
+23. https://pixabay.com/
+Free and paid images
+
+24. https://www.pexels.com/
+Free and paid images
+
+25. https://stackoverflow.com/
+To solve programming problems
+
+26. 
+
+
+27. 
+
+
+28. 
+
+
+29. 
+
+
+30. 
+
+
+31. 
+
+
+32. 
+
+
+33. 
+
+
+34. 
+
+
+35. 
+
+
+36. 
+
+
+37. 
+
+
+38. 
+
+
+39. 
+
+
+
+40. 
+
+
+
