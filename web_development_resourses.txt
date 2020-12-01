@@ -78,11 +78,11 @@ To solve programming problems
 26. https://get.foundation/
 Framework of css like bootstrap
 
-27. 
+27. https://repl.it/
+Best online IDE
 
-
-28. 
-
+28. https://www.datacamp.com/
+Data science & ML free courses or degrees best 
 
 29. 
 

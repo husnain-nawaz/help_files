@@ -4,5 +4,7 @@ Skills I Got:
 `````````````
 
 HTML          ---------->  DATE : 25 octobar 2020
+	2 November 2020  --> HTML All without Refrences Done through w3school.com website   --> 8 Days 
 
-
+CSS           ---------->  DATE : 26 november 2020
+	

@@ -5,4 +5,4 @@ https://www.w3schools.com/
 https://www.coursera.org/
 https://www.udemy.com/
 https://freecoursesite.com/  (top udemy courses for free)
-
+https://www.youtube.com/channel/UCRM1gWNTDx0SHIqUJygD-kQ     (justdjango youtube channel about django websites)
