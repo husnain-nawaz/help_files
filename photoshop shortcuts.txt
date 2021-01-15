@@ -1,0 +1,207 @@
+			Photoshop Shortcuts
+
+Alt+scroll up and down ------> zoom in & out
+ctrl+ & ctrl- --------> zoom in & out
+
+rectangular marquee Tool (M):
+shift+select by mouse -------> Add to selection
+Alt+select by mouse -------> subtract from selection
+Alt+shift+select by mouse -------> intersect with selection
+
+
+Elliptical marquee Tool (M):
+shift+select by mouse -------> Complete Round Circle / Add to selection for two or more selection
+Alt+select by mouse -------> subtract from selection
+Alt+shift+select by mouse -------> intersect with selection
+
+
+Paint Bucket Tool(G):
+Alt+backspace -------> Paint Bucket Tool (foreground color--->upper)
+ctrl+backspace -------> Paint Bucket Tool (background color--->lower)
+
+Undo:
+ctrl+Z -------> One Undo
+ctrl+Alt+Z -------> More Undo
+
+Delete:
+ctrl+Del -------> Delete
+Alt+Del -------> Delete
+
+Layer Remove:
+Backspace / Del------> Delete/Remove the whole Layer
+
+Vanish Selections:
+ctrl+D ------> Vanish Selections
+
+Full Size Image(100%):
+ctrl+1 ------> 100% image size
+
+Anti-alias:
+Check -----> Not Pixelate the Edges of Selection
+Not Check -----> Pixelate the Edges of Selection
+
+Lasso Tool(L):
+shift+select by mouse -------> Add to selection
+Alt+select by mouse -------> subtract from selection
+Alt+shift+select by mouse -------> intersect with selection
+
+Polygon Lasso Tool(L):
+Straight selection 
+shift+select by mouse -------> Add to selection
+Alt+select by mouse -------> subtract from selection
+Alt+shift+select by mouse -------> intersect with selection
+
+Backspace{Polygon Lasso Tool+Megnetic Lasso Tool(L)}:
+Back to the selected selection 
+
+esc{Polygon Lasso Tool+Megnetic Lasso Tool(L)}:
+Use to vanish/unselect selection
+
+Megnetic Lasso Tool(L):
+automatic color recognition selection 
+shift+select by mouse -------> Add to selection
+Alt+select by mouse -------> subtract from selection
+Alt+shift+select by mouse -------> intersect with selection
+
+
+Hand Tool:
+spacebar+mouse left button+mouse move
+
+Full Screen(f):
+Click  f  to Almost  full the screen 
+Click  f  Double to  full the screen 
+
+Layer Via Copy:
+ctrl+J -----> Make a new copy of layer of selected Selection If not Selected Than make a full image copy on new Layer Which Image Layer is selected
+
+
+Quick Selection Tool(W):
+
+
+
+Magic Wand Tool(W):
+shift+Select by matching Color Pixels automatically
+Tolerence Increase or Decrease
+Minus Selection ---------> Alt+Left Mouse Click+Mouse Move
+
+
+Select Inverse:
+ctrl+shift+I ------> select the inverse area for operation
+
+Contigeous:
+Check  ------> Default/ select same color portion in small part of image where color matches
+NOt Check -------> Select the matching color of whole images
+
+Sample All Layers:   vedio-2 [20:20]
+NOt Check -----> Default/Not select selection but whole image in empty or new layer
+Check  -------> select selection of any part of  image in empty or new layer & made by ctrl+J
+
+Quick Selection Tool(W):
+Big Bursh Size ------> Right Square bracket ]
+Small Bursh Size ------> Left Square bracket [
+Minus Selection ---------> Alt+Left Mouse Click+Mouse Move
+
+Transform[vedio-3 ----> 6:00]:
+Resize/stretch the image Freely in any Side -------> ctrl+T & resize it by its corners
+Resize the image in 4 by 4 Side or rectangular -------> ctrl+T & resize it by its corners+Shift
+Finalize the size of image Press  -------> Enter
+
+LAYERS:
+
+Lock Transparent Pixels:
+ON ------> Everthing apply in Active Layer Pixels Not in Full New Layer Transparent Pixels
+OFF ------> Everthing i.e Bursh color apply in Full Layer Pixels
+
+Lock Image Pixels:
+ON  -----> Can't Make anything on image pixels But Move , Strech etc
+Plus Lock -----> Lock Transparent Pixels
+
+Lock Position:
+ON  ------> Can't Move Layer But can work on it 
+
+Lock All:
+Lock the Complete Layer Can't Do any type of work
+
+Multiply:
+Delete the white(light colors) color in image and black(dark colors) left behind completely
+
+Screen:
+Delete the Black(dark colors) color in image and White(light colors) left behind completely
+
+Color[vedio-3 ----> 23:00]:
+Select image part and fill it with color by ctrl+backspace and COLOR effect on that color on new layer
+
+Invert Colors:
+Reverse image colors ------> ctrl+I
+Image ---->Adjustments ----->Invert(ctrl+I)
+
+Emerge Layers:
+Select layers by ----> ctrl+Left mouse button ----> than Press ----> ctrl+E
+
+Kind on Layer:
+Its the Search option use for searching the layers
+
+Group Layers:
+ctrl+G ----> make a group of layers
+
+Select Layers:
+shift+Left Mouse Button to select All between layers
+ctrl+Left Mouse Button to select Indivisual Layers
+
+Copy Group Layers & layer:
+Alt+Left Mouse Button+Mouse Move
+
+Revert Image[vedio-3 -----> 12:00]:
+Revert image to its back position(starting/opening position OR Last Saved State) Press -----> F12
+
+Perspective Crop Tool(C) [vedio-3 -----> 14:00]:
+straighten any Image From any Angle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+
+
+
+
+1- wp reset 
+use to rest the whole wordpress website
+
+2- WP Mail SMTP by WPForms
+use to connect accounts to get wp forms contact entries mails on acouunts 
+
+3- elementor
+Page builder
+
+4- wp forms
+contact form builder
+
+5- contact form 7
+free contact form
+
+6- contact form db
+to get entries data from contact form 7 entries
+
+7- UpdraftPlus - Backup/Restore
+restore website for backup
+
+8- paid membership pro
+for memberships
+
+9- elements kit
+Free header and footer builder
+
+10- wp forms
+Use to Add contact forms
+
+11- unlimited elements for elementor
+Add custom widgets
+
+12- Elementor header and footer
+Header, Footer & Blocks Template
+
+13- 
+
+
+14-
+
+
+15-
+
+
+
+16- 
+
+
+17-
+
+
+18-
+
+
+19-
+
+
+20-
+
+
+
+
+
+
+
+
+
+
+
+
+
