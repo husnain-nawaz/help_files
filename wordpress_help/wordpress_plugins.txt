@@ -1,7 +1,5 @@
 
 
-
-
 1- wp reset 
 use to rest the whole wordpress website
 
@@ -38,13 +36,13 @@ Add custom widgets
 12- Elementor header and footer
 Header, Footer & Blocks Template
 
-13- 
+13- Elementor Custom Skin
+Create new skins for Elementor PRO 2
 
+14- Starter Templates
+Free Templates/ landing pages
 
-14-
-
-
-15-
+15- 
 
 
 
