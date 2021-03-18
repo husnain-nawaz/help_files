@@ -9,19 +9,26 @@ To remove folders
 2. https://lockhunter.com/
 software to delete folders 
 
-3. 
+3. virtualenv venv
+Create virtual environment
 
-4. 
+4. venv\scripts\activate
+activate virtual environment
 
-5. 
+5. pip freeze / pip list
+to check dowlnloaded packages
 
-6. 
+6. pip install django==2.2
+install package with version
 
-7. 
+7. django-admin startproject demo_website
+To add django templates 
 
-8. 
+8. python manage.py startapp blog
+TO add blog project files in website django templates
 
 9. 
+
 
 10.
 
